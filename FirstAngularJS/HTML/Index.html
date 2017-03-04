@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="app1">
+<head>
+    <title>Dining Calculator</title>
+</head>
+<body ng-controller="MainCtrl as main">
+    <input type="number" ng-model="main.totalBill" ng-change="main.calc()" placeholder="Total Bill" />
+    <input type="number" ng-model="main.tipPercent" ng-change="main.calc()" placeholder="Tip Percentage" />
+    <input type="number" ng-model="main.peopleAmt" ng-change="main.calc()" placeholder="Amount of People" />
+    <div>{{main.dollorPerson}}</div>
+    <script src="../Scripts/angular.js"></script>
+    <script>
+        (
+        function () {
+            'use strict';
+            angular.module('app1', [])
+                .controller('MainCtrl', mainFun1);
+            function mainFun1($filter)
+            {
+                var vm = this,
+                    
+                vm.calc = function()
+                {
+                    vm.totalPerson = vm.totalBill + (vm.totalBill * vm.tipPercent) / 100 / vm.peopleAmt || 'Cal';
+                    vm.dollorPerson = $filter('currency')(vm.totalPerson, '$', 2);
+                }
+                vm.calc();
+                //return $filter('currency')(vm.totalPerson, '$', 2);
+            } 
+        }) ();
+    </script>
+</body>
+</html>
