@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="angular.js"></script>
+  <!-- <script scr="module.js"></script>
+  <script scr="empController.js"></script> -->
+  <script>
+    var myApple = angular.module('myApple', []);
+    myApple.controller('myCtrl', function($scope){
+      var emp = {name1: "KAnth", salary: 1000};
+      $scope.name="Srikanth";
+      $scope.emp = emp;
+    });
+  </script>
+</head>
+<body ng-app="myApple">
+  {{10*30}}
+  <table ng-modal="myApple" ng-controller="myCtrl">
+    <!-- <tr><td>{{emp.name}}</td></tr>
+    <tr><td>{{emp.designation}}</td></tr> -->
+
+    <tr><td>{{emp.name1}}</td></tr>
+    <tr><td>{{emp.salary}}</td></tr>
+  </table>
+</body>
+</html>

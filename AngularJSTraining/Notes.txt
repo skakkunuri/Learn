@@ -1,0 +1,71 @@
+-----------------------------------------------------------------------------------
+Day-1
+-----------------------------------------------------------------------------------
+Issue with traditional web development
+----------------------------------------------------
+Debugging
+intellisense support
+unit test cases
+Server round trips
+Refresh issues
+change notice is not easy
+cross platform support issues
+usability
+scalability
+performance
+
+Clientside frameworks
+-----------------------------------------------------
+Amber JS
+Knowout JS
+JQuery
+Backbone JS
+React JS
+
+MVC is serverside framework
+
+Twoway binding/ Dirty  checking/Change detection
+
+What version ?  1.6.4
+
+Document Object Modeling
+
+Why JS:
+-----------------------
+less code with reuse
+two way binding
+dependency injection --> decoupling and unit testability
+Form validation
+DOM manipulation
+Unit testable -> Protractor
+
+
+Compile and Link
+
+Watch/Digest/Dirty check
+
+Apply method will be called two times
+More watchers more performance issues - max 2000 watchers as suggessted by Google.
+How to detact watchers??? Still a question -- there is a API function to count number of watchers
+
+Module  is kind of container
+
+
+-----------------------------------------------------------------------------------
+Day-2
+-----------------------------------------------------------------------------------
+$rootScope - global service - available through out browser session
+ng-hide and ng-show - use these directives to span p paragraph type controls
+
+
+Custom directives:
+Element
+Attribute
+CSS class
+Comment 
+-----------------------------------------------------------------------------------
+Day-3
+-----------------------------------------------------------------------------------
+Filters
+Customer Filters
+Validation
